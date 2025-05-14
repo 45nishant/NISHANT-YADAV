@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Profile - Nishant Yadav</title>
+<style>
+  /* Reset */
+  * {
+    box-sizing: border-box;
+  }
+  body, html {
+    margin: 0; padding: 0; height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+  }
+
+  /* Background container */
+  body {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  /* Indian flag as background */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.6;
+    z-index: -3;
+  }
+
+  /* Soldiers image overlay */
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("https://images.unsplash.com/photo-1600488991610-e8db53a68ed2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -2;
+    mix-blend-mode: multiply;
+  }
+
+  /* Main container styling */
+  .profile-card {
+    max-width: 420px;
+    background: rgba(0,0,0,0.55);
+    margin: 100px auto;
+    border-radius: 18px;
+    padding: 40px 40px 40px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.7);
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0 0 16px;
+    font-size: 2.8rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 3px 8px #222;
+  }
+
+  p {
+    margin: 12px 0;
+    font-size: 1.4rem;
+    color: #ffd;
+    text-shadow: 0 1px 6px #000;
+  }
+</style>
+</head>
+<body>
+  <main class="profile-card" role="main" aria-label="Profile of Nishant Yadav">
+    <h1>Nishant Yadav</h1>
+    <p><strong>Class:</strong> 12</p>
+    <p><strong>School:</strong> SKD Academy</p>
+  </main>
+</body>
+</html>
+
